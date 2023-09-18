@@ -1,0 +1,33 @@
+.Button{
+    background-color:var(--Color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--Color2);
+    font-size: 50px;
+
+
+    &Box{
+       
+        position: relative;
+    }
+
+    &Shadow{
+        width: 60px; 
+        height: 60px;
+        border-radius: 50%;
+        background-color: var(--Color4);
+        position: absolute;
+        top: 5px;
+        z-index: -1;
+}
+
+&:active{
+    transform: translateY(4px);
+}
+
+
+}
+

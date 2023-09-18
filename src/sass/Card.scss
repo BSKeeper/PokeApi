@@ -1,0 +1,41 @@
+.Card{
+    
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    background-color: var(--Color5);
+    box-shadow: 3px 3px 10px;
+    padding: 48px 12px 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    &Name{
+        background-color: var(--Color6);
+        text-align: center;
+        color: var(--Color7);
+        width: 140px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 6px 12px;
+    }
+
+    &Circle{
+        background-color: var(--Color8);
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        top: 56px;
+        left: 24px;
+
+    }
+
+    &Img{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,83 @@
+/*iniciales*/
+
+@font-face {
+    font-family: 'POH';
+    src: url("../fonts/POH.TTF");
+}
+
+
+/*Reservadas*/
+h1{
+    
+    font-family: POH;
+    font-size: 2.5em;
+    color: var(--Color6);
+  
+
+}
+
+/*Estilos*/
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.ButtonsContainer{
+   
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.CardContainer{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.CardContainer .Card:nth-child(1){
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    transition: 100ms;
+    transform: rotate(-5deg) translateY(10px);
+    &:hover{
+        transform: rotate(-5deg) translateY(0);
+    }
+} 
+
+.CardContainer .Card:nth-child(2){
+    position: absolute;
+    left: 150px;
+    z-index: 2;
+    transition: 100ms;
+    &:hover{
+        transform: translateY(-10px);
+    }
+} 
+
+.CardContainer .Card:nth-child(3){
+    position: absolute;
+    left: 300px;
+    z-index: 1;
+    transition: 100ms;
+    transform: rotate(5deg) translateY(10px);
+    &:hover{
+        transform: rotate(5deg) translateY(0);
+    }
+} 
+
+.Card1{
+    transform: rotate(5deg) translate(150px);
+}
+
+.Card2{
+    transform: rotate(2.5deg) translate(80px);
+}
+
